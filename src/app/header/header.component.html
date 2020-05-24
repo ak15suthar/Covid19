@@ -1,0 +1,24 @@
+<div style="background-color: #1E1E30;">
+    <mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark" [containerInside]="false">
+        <mdb-navbar-brand><a class="navbar-brand" href="#">
+                <h5>COVID19</h5>
+                <h5 style="color: #007BFF;font-family: Arial, Helvetica, sans-serif;">INDIA</h5>
+            </a></mdb-navbar-brand>
+        <links>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link waves-light" mdbWavesEffect [routerLink]="['']"><i class="fas fa-home"
+                            style="color: #007BFF;"></i><span class="sr-only">(current)</span></a>
+                </li>
+                <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -->
+                <li class="nav-item">
+                    <a class="nav-link" [routerLink]="['./states']">Statewise Analysis</a>
+                </li>
+                <!-- <li class="nav-item">
+                    <a class="nav-link" [routerLink]="['./testing']">Testing</a>
+                </li> -->
+            </ul>
+        </links>
+    </mdb-navbar>
+</div>

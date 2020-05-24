@@ -1,0 +1,54 @@
+<div class="jumbotron " >
+    <div class="row">
+        <div class="card col p-3 m-2" style="background-color: #1E1E30;">
+            <div class="ui statistic">
+                <div class="label" style="color: #FF073A;">
+                    <h6 style="font-size: 11px;">Confirmed</h6>
+                </div>
+                <div class="value" style="color: #FF073A;">
+                    <h1 style="font-size: 22px;">{{list.total}}</h1>
+                </div>
+            </div>
+        </div>
+        <div class="card col p-3 m-2" style="background-color: #1E1E30;">
+            <div class="ui statistic">
+                <div class="label" style="color: #007BFF;">
+                    <h6 style="font-size: 11px;">Active</h6>
+                </div>
+                <div class="value" style="color: #007BFF;">
+                    <h1 style="font-size: 22px;">{{list.confirmedCasesIndian}}</h1>
+                </div>
+            </div>
+        </div>
+        <div class="card col p-3 m-2" style="background-color: #1E1E30;">
+            <div class="ui statistic">
+                <div class="label" style="color: #28A745">
+                    <h6 style="font-size: 11px;">Recovered</h6>
+                </div>
+                <div class="value" style="color: #28A745">
+                    <h1 style="font-size: 22px;">{{list.discharged}}</h1>
+                </div>
+            </div>
+        </div>
+        <div class="card col p-3 m-2" style="background-color: #1E1E30;">
+            <div class="ui statistic">
+                <div class="label" style="color: #6C757D;">
+                    <h6 style="font-size: 11px;">Deceased</h6>
+                </div>
+                <div class="value" style="color: #6C757D;">
+                    <h1 style="font-size: 22px;">{{list.deaths}}</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container image-fluid" style="width: 50%;">
+
+
+    <ngx-charts-bar-vertical [title]="title" [view]="view1" [scheme]="colorScheme1" [results]="single1"
+        [gradient]="gradient1" [xAxis]="showXAxis1" [yAxis]="showYAxis1" [legend]="showLegend1"
+        [showXAxisLabel]="showXAxisLabel1" [showYAxisLabel]="showYAxisLabel1" [xAxisLabel]="xAxisLabel1">
+    </ngx-charts-bar-vertical>
+
+</div>
