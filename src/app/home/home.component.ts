@@ -7,7 +7,7 @@ import { HttpClient } from '@angular/common/http';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-  public list: {};
+  public list:any;
   public memoryapi
   public memoryinfo
   public single1 = [];
@@ -76,5 +76,5 @@ export class HomeComponent implements OnInit {
     domain: ['#9370DB', '#87CEFA', '#FA8072', '#FF7F50', '#90EE90', '#9370DB']
   };
   showLabels1 = true;
-
+  onResize(event) { this.view1 = [event.target.innerWidth - 900, 280 ]; }
 }

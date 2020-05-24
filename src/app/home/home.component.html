@@ -48,7 +48,8 @@
 
     <ngx-charts-bar-vertical [title]="title" [view]="view1" [scheme]="colorScheme1" [results]="single1"
         [gradient]="gradient1" [xAxis]="showXAxis1" [yAxis]="showYAxis1" [legend]="showLegend1"
-        [showXAxisLabel]="showXAxisLabel1" [showYAxisLabel]="showYAxisLabel1" [xAxisLabel]="xAxisLabel1">
+        [showXAxisLabel]="showXAxisLabel1" [showYAxisLabel]="showYAxisLabel1" [xAxisLabel]="xAxisLabel1"
+        style="fill: red;" (window:resize)="onResize($event)">
     </ngx-charts-bar-vertical>
 
 </div>
