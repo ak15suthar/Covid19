@@ -1,8 +1,9 @@
+<!-- Header -->
 <div style="background-color: #1E1E30;">
     <mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark" [containerInside]="false">
         <mdb-navbar-brand><a class="navbar-brand" href="#">
-                <h5>COVID19</h5>
-                <h5 style="color: #007BFF;font-family: Arial, Helvetica, sans-serif;">INDIA</h5>
+                <h4>COVID19</h4>
+                <h5 style="color: #007BFF; text-align: center; font-family: Arial, Helvetica, sans-serif;">INDIA</h5>
             </a></mdb-navbar-brand>
         <links>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -13,11 +14,17 @@
                 </li>
                 <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -->
                 <li class="nav-item">
-                    <a class="nav-link" [routerLink]="['./states']">Statewise Analysis</a>
+                    <a class="nav-link" [routerLink]="['./states']"><h5>Statewise Analysis</h5> </a>
                 </li>
-                <!-- <li class="nav-item">
-                    <a class="nav-link" [routerLink]="['./testing']">Testing</a>
-                </li> -->
+                <li class="nav-item">
+                    <a class="nav-link" [routerLink]="['./symptoms']"><h5>Symptoms</h5></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" [routerLink]="['./helpline']"><h5>Help-Line</h5></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" [routerLink]="['./preventions']"><h5>Preventions</h5></a>
+                </li> 
             </ul>
         </links>
     </mdb-navbar>

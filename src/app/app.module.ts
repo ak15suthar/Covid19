@@ -11,6 +11,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgxChartsModule } from '@swimlane/ngx-charts'; 
 import { DataTablesModule } from 'angular-datatables';
 import { StatesComponent } from './states/states.component';
+import { HelplineComponent } from './helpline/helpline.component';
+import { SymptomsComponent } from './symptoms/symptoms.component';
+import { PreventionsComponent } from './preventions/preventions.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +21,10 @@ import { StatesComponent } from './states/states.component';
     HomeComponent,
     HeaderComponent,
     FooterComponent,
-    StatesComponent
+    StatesComponent,
+    HelplineComponent,
+    SymptomsComponent,
+    PreventionsComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,45 @@
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-sm">
+            <!-- One of three columns -->
+        </div>
+        <div class="col-sm">
+            <div class="card-body d-flex " style="background-color: #1E1E30; color:white;">
+                <div class="col">
+                    <label>Ministry of Health & Family Welfare </label>
+                </div>
+                <div class="col">
+                    <p class="card-text">Phone : {{main.number}} </p>
+                    <p class="card-text">Email ID : {{main.email}}</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm">
+            <!-- One of three columns -->
+        </div>
+    </div>
+</div>
+
+<!-- <div class="container">
+    <div class="row ml-2">
+        <div class="card p3  col-lg-3 m-5"  *ngFor="let l of list" style="width: 18rem; background-color: #1E1E30; color:white;">
+            <div class="card-body d-flex flex-row">
+                <p class="card-text"> {{l.loc}} </p>
+                <p class="card-text"> :  {{l.number}}</p>
+            </div>
+        </div>
+    </div>
+</div> -->
+
+<div class="container col-lg-12 p-3 m-2">
+    <div class="row">
+        <div class="col-lg-3 m-4" style="background-color: #1E1E30; color: white;" *ngFor="let l of list">
+            <!-- <div class="card mt-5 "  style="background-color: #1E1E30; color: white;"> -->
+                <div class="card-body">
+                    <p class="card-text"> {{l.loc}} </p>
+                    <p class="card-text"> : {{l.number}}</p>
+                </div>
+            <!-- </div> -->
+        </div>
+    </div>
+</div>
