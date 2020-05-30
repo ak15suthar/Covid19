@@ -31,15 +31,31 @@
     </div>
 </div> -->
 
-<div class="container col-lg-12 p-3 m-2">
+<!-- <div class="container col-lg-12 p-3 m-2">
     <div class="row">
-        <div class="col-lg-3 m-4" style="background-color: #1E1E30; color: white;" *ngFor="let l of list">
-            <!-- <div class="card mt-5 "  style="background-color: #1E1E30; color: white;"> -->
-                <div class="card-body">
+        <div class="col-lg-2 m-4" style="background-color: #1E1E30; color: white;" *ngFor="let l of list">
+                            <div class="card-body">
                     <p class="card-text"> {{l.loc}} </p>
                     <p class="card-text"> : {{l.number}}</p>
                 </div>
-            <!-- </div> -->
+            
         </div>
     </div>
+</div> -->
+
+<div class="container w3-center mt-5">
+    <table class="table ">
+        <thead class="grey lighten-2">
+            <tr>
+                <th scope="col">Location</th>
+                <th scope="col">Phone No</th>
+            </tr>
+        </thead>
+        <tbody *ngFor="let l of list">
+            <tr>
+                <th scope="row">{{l.loc}}</th>
+                <td>{{l.number}}</td>
+            </tr>
+        </tbody>
+    </table>
 </div>

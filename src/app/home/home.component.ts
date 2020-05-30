@@ -122,7 +122,7 @@ export class HomeComponent implements OnInit {
     })
   }
   title1 = 'Covid19 Bar Chart';
-  view1: any[] = [450, 400];
+  view1: any[] = [380, 380];
   // options for the chart
   showXAxis1 = true;
   showYAxis1 = true;
@@ -169,7 +169,7 @@ export class HomeComponent implements OnInit {
     })
   }
   title2 = 'Covid19 Pie Chart';
-  view2: any[] = [500, 400];
+  view2: any[] = [350,350];
   // options for the chart
   gradient2 = true;
   showLegend2 = true;

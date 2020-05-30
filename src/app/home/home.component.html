@@ -1,16 +1,15 @@
 <!-- Header -->
-<div class="jumbotron " style=" background-color: #1E1E30;">
-    <div class="row">
+ <!-- <div class="jumbotron " style=" background-color: #1E1E30;">
+    <div class="row" >
         <div class="card col p-3 m-2" style="background-color: #1E1E30;">
-            <div class="ui statistic">
-                <div class="label" style="color: #FF073A;">
+            <div class="ui statistic" >
+                <div class="label" style="color: #FF073A; ">
                     <h6 style="font-size: 11px;">Confirmed</h6>
                 </div>
                 <div class="value" style="color: #FF073A;">
-                    <h4 style="font-size: 14px;">[+{{DailyStatus.total.confirmed}}]</h4>
-                    <h1 style="font-size: 22px;">{{statewisecase.confirmed}}</h1>
+                    <h4 style="font-size: 14px; ">[+{{DailyStatus.total.confirmed}}]</h4>
+                    <h1 style="font-size: 22px; ">{{statewisecase.confirmed}}</h1>
                 </div>
-
             </div>
         </div>
         <div class="card col p-3 m-2" style="background-color: #1E1E30;">
@@ -47,15 +46,41 @@
             </div>
         </div>
     </div>
-</div>
+</div>  -->
 
+
+ <table class="table table-borderless w3-center" style=" background-color: #1E1E30;">
+    <thead >
+      <tr >
+        <th scope="col"  style="color: #FF073A;">Confirmed</th>
+        <th scope="col" style="color: #007BFF;">Active</th>
+        <th scope="col" style="color: #28A745">Recovered</th>
+        <th scope="col" style="color: #6C757D;">Death</th>
+      </tr>
+    </thead>
+    <tbody >
+      <tr>
+        <th scope="row" style="color: #FF073A;">[+{{DailyStatus.total.confirmed}}]</th>
+        <td style="color: #007BFF;">[+{{DailyStatus.total.active}}]</td>
+        <td style="color: #28A745">[+{{DailyStatus.total.recovered}}]</td>
+        <td style="color: #6C757D;">[+{{DailyStatus.total.deaths}}]</td>
+      </tr>
+      <tr>
+        <th scope="row" style="color: #FF073A;">{{statewisecase.confirmed}}</th>
+        <td style="color: #007BFF;">{{statewisecase.active}}</td>
+        <td style="color: #28A745;">{{statewisecase.recovered}}</td>
+        <td style="color: #6C757D;">{{statewisecase.deaths}}</td>
+      </tr>
+      
+    </tbody>
+  </table> 
 
 <!-- Chart -->
-<div class="container mt-5">
-    <div class="row">
+<div class="w3-container ">
+    <!-- <div> -->
         
         <!-- Bar Garph -->
-        <div class="col">
+        <div class="w3-half w3-center ">
             <div style="display: inline-block">
                 <ngx-charts-bar-vertical [title]="title1" [view]="view1" [scheme]="colorScheme1" [results]="single1"
                     [gradient]="gradient1" [xAxis]="showXAxis1" [yAxis]="showYAxis1" [legend]="showLegend1"
@@ -66,7 +91,7 @@
         </div>
 
         <!-- Pie Chart -->
-        <div class="col">
+        <div class="w3-half w3-center">
             <div style="display: inline-block">
                 <ngx-charts-pie-chart [view]="view2" [scheme]="colorScheme2" [results]="single2" [gradient]="gradient2"
                     [legend]="showLegend2" [legendPosition]="legendPosition" [labels]="showLabels2" [doughnut]="isDoughnut"
@@ -75,5 +100,5 @@
             </div>
         </div>
 
-    </div>
+    <!-- </div> -->
 </div>
